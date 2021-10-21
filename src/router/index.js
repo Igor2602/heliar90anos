@@ -4,6 +4,8 @@ import FaleConosco from '../views/FaleConosco.vue'
 import Cadastro from '../views/Cadastro.vue'
 import MeuPerfil from '../views/MeuPerfil.vue'
 import Regulamento from '../views/Regulamento.vue'
+import CriarSenha from '../views/CriarSenha.vue'
+import ValidarCadastro from '../views/ValidarCadastro.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +29,16 @@ const routes = [
     path: '/regulamento',
     name: 'Regulamento',
     component: Regulamento
+  },
+  {
+    path: '/criar-senha',
+    name: 'CriarSenha',
+    component: CriarSenha
+  },
+  {
+    path: '/validar-cadastro',
+    name: 'ValidarCadastro',
+    component: ValidarCadastro
   },
 ]
 
