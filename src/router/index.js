@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
 import FaleConosco from '../views/FaleConosco.vue'
 import Cadastro from '../views/Cadastro.vue'
 import MeuPerfil from '../views/MeuPerfil.vue'
 import Regulamento from '../views/Regulamento.vue'
 import CriarSenha from '../views/CriarSenha.vue'
 import ValidarCadastro from '../views/ValidarCadastro.vue'
+import Premiacao from '../views/Premiacao.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
+  },
   {
     path: '/fale-conosco',
     name: 'FaleConosco',
@@ -39,6 +46,11 @@ const routes = [
     path: '/validar-cadastro',
     name: 'ValidarCadastro',
     component: ValidarCadastro
+  },
+  {
+    path: '/premiacao',
+    name: 'Premiacao',
+    component: Premiacao
   },
 ]
 

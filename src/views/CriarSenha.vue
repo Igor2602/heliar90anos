@@ -1,65 +1,75 @@
 <template>
   <div class="criar-senha-wrapper">
-    <v-container fluid>
-      <v-row>
-        <v-col class="d-flex justify-center align-center">
-          <h1>Crie sua senha</h1>
-        </v-col>
-      </v-row>
+    <v-row>
+      <v-col>
+        <HeaderCad />
+      </v-col>
+    </v-row>
 
-      <v-row>
-        <v-col>
-          <v-form
-            ref="form"
-            v-model="valid"
-            @submit.prevent="submit"
-          >
-            <v-text-field
-              label="Senha"
-              v-model="form.password"
-              :rules="rules.required"
-              type="password"
-              required
-              filled
-              rounded
-              solo
-            ></v-text-field>
+    <div class="criar-senha-content ">
+      <v-container fluid>
+        <v-row>
+          <v-col class="d-flex justify-center align-center">
+            <h1>Crie sua senha</h1>
+          </v-col>
+        </v-row>
 
-            <v-text-field
-              label="Confirmar Senha"
-              v-model="form.confirmPassword"
-              :rules="[rules.required,passwordConfirmationRule]"
-              type="password"
-              required
-              filled
-              rounded
-              solo
-            ></v-text-field>
-
-            <div class="d-flex justify-center align-center">
-              <v-btn
-                class="next"
-                color="primary"
-                width="250px"
-                elevation="2"
+        <v-row>
+          <v-col>
+            <v-form
+              ref="form"
+              v-model="valid"
+              @submit.prevent="submit"
+            >
+              <v-text-field
+                label="Senha"
+                v-model="form.password"
+                :rules="rules.required"
+                type="password"
+                required
+                filled
                 rounded
-                large
-                :loading="loading"
-                @click="submit()"
-              >
-              Entrar
-            </v-btn>
-            </div>
-          </v-form>
-        </v-col>
-      </v-row>
-    </v-container>
+                solo
+              ></v-text-field>
+
+              <v-text-field
+                label="Confirmar Senha"
+                v-model="form.confirmPassword"
+                :rules="[rules.required,passwordConfirmationRule]"
+                type="password"
+                required
+                filled
+                rounded
+                solo
+              ></v-text-field>
+
+              <div class="d-flex justify-center align-center">
+                <v-btn
+                  class="btn-primary"
+                  width="250px"
+                  rounded
+                  large
+                  :loading="loading"
+                  @click="submit('/validar-cadastro')"
+                >
+                Entrar
+              </v-btn>
+              </div>
+            </v-form>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
     name: 'CriarSenha',
+
+    components: {
+      HeaderCad: () => import('@/assets/components/HeaderCad.vue'),
+    },
 
     data() {
       return {
@@ -82,20 +92,35 @@
     },
 
     methods: {
-      submit() {
+      submit(item) {
         this.loading = true;
         if (this.$refs.form.validate()) {
-          console.log(this.form);
+          if (item !== this.$router.currentRoute.path) {
+            this.$router.push(item);
+          }
+
         }
         this.loading = false;
       }
-    },
+    }
   }
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/scss/_global.scss';
+
 .criar-senha-wrapper {
-  max-width: 746px;
-  margin: 0 auto;
+  padding-bottom: 80px;
+  min-height: 95vh;
+  background: url('../assets/img/bg-internas.jpg') center top no-repeat #0b2b12;
+
+  .criar-senha-content {
+    max-width: 746px;
+    margin: 0 auto;
+
+    .btn-primary {
+      @include button-format;
+    }
+  }
 }
 </style>

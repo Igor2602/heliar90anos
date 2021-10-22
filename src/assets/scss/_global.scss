@@ -1,0 +1,64 @@
+@import './fonts';
+@import './buttons';
+
+#app {
+  font-family: 'montserratmedium';
+}
+
+h1 {
+  @include font-format;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+// INPUT // 
+.v-input {
+  .v-input__control {
+    .v-input__slot {
+      min-height: 48px !important;
+
+      &:hover {
+        background: #fff !important;
+      }
+      .v-select__slot {
+        justify-content: center;
+        .v-label {
+          left: auto !important;
+        }
+      }
+      .v-text-field__slot {
+        justify-content: center;
+        .v-label {
+          left: auto !important;
+        }
+      }
+    }
+  }
+
+  &.v-input--checkbox {
+    .v-input__control {
+      .v-input__slot {
+        &:hover {
+          background: transparent !important;
+        }
+      }
+      .v-input--selection-controls__input {
+        .v-icon {
+          color: #fff;
+        }
+      }
+      .v-label {
+        color: #fff;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &.v-input--is-disabled {
+    .v-input__control {
+      .v-input__slot {
+        opacity: 0.80;
+      }
+    }
+  }
+}
