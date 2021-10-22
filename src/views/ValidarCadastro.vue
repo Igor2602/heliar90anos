@@ -37,7 +37,7 @@
               rounded
               x-large
               :loading="loading"
-              @click="navegation('/premiação')"
+              @click="navegation('/premiacao')"
             >
               Valide seu cadastro
             </v-btn>              
