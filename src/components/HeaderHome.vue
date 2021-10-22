@@ -2,7 +2,7 @@
   <div
     class="headerCad-wrapper d-flex justify-center align-center"
   >
-    <img src="@/assets/img/logo-internas.png">
+    <img src="@/assets/img/logo.png">
 
     <v-btn
       class="btn-primary"
@@ -11,7 +11,7 @@
       rounded
       @click="navegation('/fale-conosco')"
     >
-      Fale Conosco
+      Fazer Login
     </v-btn>
   </div>
 </template>
@@ -36,21 +36,22 @@
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/_global.scss';
+@import '../assets/scss/_global.scss';
 .headerCad-wrapper {
   position: relative;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 30px auto 0;
 
   .btn-primary {
     height: 28px;
     color: #fff;
     font-weight: bold;
-    background: #5fcf4a;
+    background: #0b2b12;
     text-transform: uppercase;
     position: absolute;
     right: 30px;
     font-size: 12px;
+    top: 40px;
   }
 }
 
@@ -61,6 +62,7 @@
     .btn-primary {
       position: relative;
       right: auto;
+      top: -20px;
       margin-bottom: 30px;
     }
   }

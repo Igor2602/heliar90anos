@@ -234,7 +234,7 @@
     name: 'MeuPerfil',
 
     components: {
-      HeaderLogado: () => import('@/assets/components/HeaderLogado.vue'),
+      HeaderLogado: () => import('@/components/HeaderLogado.vue'),
     },
 
     data() {
@@ -325,6 +325,10 @@
     .btn-primary {
       @include button-format;
     }
+  }
+
+  @media(max-width: 850px) {
+    background: url('../assets/img/bg-internas-mob.jpg') center top no-repeat #0b2b12;
   }
 }
 </style>

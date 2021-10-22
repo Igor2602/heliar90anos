@@ -16,7 +16,7 @@ export default {
   name: 'App',
 
   components: {
-    Footer: () => import('@/assets/components/Footer.vue'),
+    Footer: () => import('@/components/Footer.vue'),
   },
 
   data: () => ({

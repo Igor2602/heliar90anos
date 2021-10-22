@@ -53,7 +53,7 @@
     name: 'FaleConosco',
 
     components: {
-      HeaderCad: () => import('@/assets/components/HeaderCad.vue'),
+      HeaderCad: () => import('@/components/HeaderCad.vue'),
     },
 
     data() {
@@ -93,6 +93,10 @@
     .btn-primary {
       @include button-format;
     }
+  }
+
+  @media(max-width: 850px) {
+    background: url('../assets/img/bg-internas-mob.jpg') center top no-repeat #0b2b12;
   }
 }
 </style>

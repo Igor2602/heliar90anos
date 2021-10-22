@@ -59,7 +59,7 @@
     name: 'Premiacao',
 
     components: {
-      HeaderLogado: () => import('@/assets/components/HeaderLogado.vue'),
+      HeaderLogado: () => import('@/components/HeaderLogado.vue'),
     },
 
     data() {
@@ -144,6 +144,10 @@
     .v-divider {
       border: 1px solid #5fcf4a;
     }
+  }
+
+  @media(max-width: 850px) {
+    background: url('../assets/img/bg-internas-mob.jpg') center top no-repeat #0b2b12;
   }
 }
 </style>

@@ -136,7 +136,7 @@
 </script>
 
 <style lang="scss" scoped>
-@import '../../assets/scss/_global.scss';
+@import '../assets/scss/_global.scss';
 .header-logado-wrapper {
   max-width: 1000px;
   margin: 0 auto;
