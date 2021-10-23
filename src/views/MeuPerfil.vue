@@ -1,13 +1,13 @@
 <template>
   <div class="meu-perfil-wrapper">
-    <v-row>
-      <v-col>
-        <HeaderLogado />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderLogado />
+        </v-col>
+      </v-row>
 
-    <div class="meu-perfil-content ">
-      <v-container fluid>
+      <div class="meu-perfil-content ">
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <h1>SEUS DADOS</h1>
@@ -224,8 +224,8 @@
             </v-form>
           </v-col>
         </v-row>
-      </v-container>
-    </div>
+      </div>
+    </v-container>
   </div>
 </template>
 

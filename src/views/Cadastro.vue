@@ -1,13 +1,13 @@
 <template>
   <div class="wrapper-cadastro">
-    <v-row>
-      <v-col>
-        <HeaderCad />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderCad />
+        </v-col>
+      </v-row>
 
-    <div class="cadastro-content">
-      <v-container fluid>
+      <div class="cadastro-content">
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <h1>PREENCHA SEUS DADOS ABAIXO PARA CADASTRO</h1>
@@ -230,8 +230,8 @@
             </v-form>
           </v-col>
         </v-row>
-      </v-container>
-    </div>
+      </div>
+    </v-container>
   </div>
 </template>
 

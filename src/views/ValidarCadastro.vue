@@ -1,13 +1,13 @@
 <template>
   <div class="validar-cadastro-wrapper">
-    <v-row>
-      <v-col>
-        <HeaderCad />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderCad />
+        </v-col>
+      </v-row>
 
-    <div class="validar-cadastro-content ">
-      <v-container fluid>
+      <div class="validar-cadastro-content ">
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <h1>ASSISTA O VÍDEO PARA VALIDAR O SEU CADASTRO E PARTICIPAR</h1>
@@ -43,8 +43,8 @@
             </v-btn>              
           </v-col>
         </v-row>
-      </v-container>
-    </div>
+      </div>
+    </v-container>
   </div>
 </template>
 

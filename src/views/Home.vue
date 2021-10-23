@@ -1,19 +1,19 @@
 <template>
   <div class="home-wrapper">
-    <v-row>
-      <v-col>
-        <HeaderHome />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderHome />
+        </v-col>
+      </v-row>
 
-    <v-row class="mb-12">
-      <v-col>
-        <CadHome />
-      </v-col>
-    </v-row>
+      <v-row class="mb-12">
+        <v-col>
+          <CadHome />
+        </v-col>
+      </v-row>
 
-    <div class="home-content">
-      <v-container fluid>
+      <div class="home-content">
         <div class="como-participar-wrapper">
           <v-row>
             <v-col class="d-flex justify-center align-center">
@@ -72,8 +72,8 @@
         <div class="mt-16">
           <Login />
         </div>
-      </v-container>
-    </div>
+      </div>
+    </v-container>
   </div>
 </template>
 

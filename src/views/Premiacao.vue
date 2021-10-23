@@ -1,13 +1,13 @@
 <template>
   <div class="premiacao-wrapper">
-    <v-row>
-      <v-col>
-        <HeaderLogado />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderLogado />
+        </v-col>
+      </v-row>
 
-    <div class="premiacao-content ">
-      <v-container fluid>
+      <div class="premiacao-content ">
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <h1>Concorra aos seguintes prêmios</h1>
@@ -48,9 +48,9 @@
           </v-col>
         </v-row>
 
-        <v-divider class="mt-12 mb-12"></v-divider>        
-      </v-container>
-    </div>
+        <v-divider class="mt-12 mb-12"></v-divider>  
+      </div>
+    </v-container>
   </div>
 </template>
 

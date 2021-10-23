@@ -1,13 +1,13 @@
 <template>
   <div class="fale-conosco-wrapper">
-    <v-row>
-      <v-col>
-        <HeaderLogado />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderLogado />
+        </v-col>
+      </v-row>
 
-    <div class="fale-conosco-content ">
-      <v-container fluid>
+      <div class="fale-conosco-content ">
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <h1>Fale conosco</h1>
@@ -79,8 +79,8 @@
             </v-form>
           </v-col>
         </v-row>
-      </v-container>
-    </div>
+      </div>
+    </v-container>
   </div>
 </template>
 

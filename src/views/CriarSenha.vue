@@ -1,13 +1,13 @@
 <template>
   <div class="criar-senha-wrapper">
-    <v-row>
-      <v-col>
-        <HeaderCad />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderCad />
+        </v-col>
+      </v-row>
 
-    <div class="criar-senha-content ">
-      <v-container fluid>
+      <div class="criar-senha-content ">
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <h1>Crie sua senha</h1>
@@ -58,8 +58,8 @@
             </v-form>
           </v-col>
         </v-row>
-      </v-container>
-    </div>
+      </div>
+    </v-container>
   </div>
 </template>
 

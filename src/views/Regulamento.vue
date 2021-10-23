@@ -1,13 +1,13 @@
 <template>
   <div class="regulamento-wrapper">
-    <v-row>
-      <v-col>
-        <HeaderLogado />
-      </v-col>
-    </v-row>
+    <v-container fluid>
+      <v-row>
+        <v-col>
+          <HeaderLogado />
+        </v-col>
+      </v-row>
 
-    <div class="regulamento-content ">
-      <v-container fluid>
+      <div class="regulamento-content ">
         <v-row>
           <v-col class="d-flex justify-center align-center">
             <h1>Regulamento</h1>
@@ -27,8 +27,8 @@
             </div>
           </v-col>
         </v-row>
-      </v-container>
-    </div>
+      </div>
+    </v-container>
   </div>
 </template>
 
