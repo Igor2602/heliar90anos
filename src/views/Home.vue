@@ -3,7 +3,9 @@
     <v-container fluid>
       <v-row>
         <v-col>
-          <HeaderHome />
+          <HeaderHome
+            @navegation="scrollMeTo('login')"
+          />
         </v-col>
       </v-row>
 
@@ -69,7 +71,7 @@
           </v-row>
         </div>
 
-        <div class="mt-16">
+        <div class="mt-16" ref="login">
           <Login />
         </div>
       </div>
@@ -86,6 +88,14 @@
       Login: () => import('@/components/Login.vue'),
       CadHome: () => import('@/components/CadHome.vue'),
     },
+
+    methods: {
+      scrollMeTo(refName) {
+        const element = this.$refs[refName];
+        const top = element.offsetTop;
+        window.scrollTo({ top, behavior: 'smooth' });
+      },
+    }
   }
 </script>
 

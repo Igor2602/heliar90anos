@@ -26,10 +26,8 @@
     },
 
     methods: {
-      navegation(item) {
-        if (item !== this.$router.currentRoute.path) {
-          this.$router.push(item);
-        }
+      navegation() {
+        this.$emit('navegation');
       },
     },
   }
