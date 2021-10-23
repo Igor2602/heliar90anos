@@ -59,6 +59,11 @@
   .headerCad-wrapper {
     flex-direction: column;
 
+    img {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
     .btn-primary {
       position: relative;
       right: auto;

@@ -1,13 +1,5 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import FaleConosco from '../views/FaleConosco.vue'
-import Cadastro from '../views/Cadastro.vue'
-import MeuPerfil from '../views/MeuPerfil.vue'
-import Regulamento from '../views/Regulamento.vue'
-import CriarSenha from '../views/CriarSenha.vue'
-import ValidarCadastro from '../views/ValidarCadastro.vue'
-import Premiacao from '../views/Premiacao.vue'
 
 Vue.use(VueRouter)
 
@@ -15,42 +7,42 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: () => import('../views/Home.vue'),
   },
   {
     path: '/fale-conosco',
     name: 'FaleConosco',
-    component: FaleConosco
+    component: () => import('../views/FaleConosco.vue'),
   },
   {
     path: '/cadastro',
     name: 'Cadastro',
-    component: Cadastro
+    component: () => import('../views/Cadastro.vue'),
   },
   {
     path: '/meu-perfil',
     name: 'MeuPerfil',
-    component: MeuPerfil
+    component: () => import('../views/MeuPerfil.vue'),
   },
   {
     path: '/regulamento',
     name: 'Regulamento',
-    component: Regulamento
+    component: () => import('../views/Regulamento.vue'),
   },
   {
     path: '/criar-senha',
     name: 'CriarSenha',
-    component: CriarSenha
+    component: () => import('../views/CriarSenha.vue'),
   },
   {
     path: '/validar-cadastro',
     name: 'ValidarCadastro',
-    component: ValidarCadastro
+    component: () => import('../views/ValidarCadastro.vue'),
   },
   {
     path: '/premiacao',
     name: 'Premiacao',
-    component: Premiacao
+    component: () => import('../views/Premiacao.vue'),
   },
 ]
 

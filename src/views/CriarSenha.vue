@@ -52,8 +52,8 @@
                   :loading="loading"
                   @click="submit('/validar-cadastro')"
                 >
-                Entrar
-              </v-btn>
+                  Entrar
+                </v-btn>
               </div>
             </v-form>
           </v-col>
