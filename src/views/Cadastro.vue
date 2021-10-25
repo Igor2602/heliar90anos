@@ -47,7 +47,6 @@
                     rounded
                     solo
                     class="mt-n6 mt-md-0"
-                    prepend-icon="mdi-map"
                   ></v-autocomplete>
                 </v-col>
               </v-row>
